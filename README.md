@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+Here is the final project Image that looks like
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build a single-page React application that displays the holdings table
+Stack to use
+- Frontend framework - React.js latest version is preferred.
+- We prefer to use material-ui
+- Date parsing - you’re free to use Dayjs 
+- Rest API client
+- For table axios
 
-## Available Scripts
+Holdings Table
+- Dataset to use is available as an API at https://canopy-frontend-task.now.sh/api/holdings
+- JSON object with a field payload containing an array of JSON objects
+- Each JSON object contains multiple properties, of which the following are to be displayed
+in the table
+- Name of the holding - name (string)
+- Ticker - ticker (string)
+- The asset class it belongs to - asset_class (string)
+- Average price - avg_price (float)
+- Market Price - market_price (float)
+- Latest change percentage - latest_chg_pct (float)
+- Market Value in Base CCY - market_value_ccy (float)
+Bonus! if possible, group the rows based on asset_class.
+- All holdings belonging to the same asset_class should be displayed together
+Double bonus!
+- Grouped holdings can be expanded or collapsed
 
-In the project directory, you can run:
+Used imports
+npx create-react-app holdings-table
+cd holdings-table
+npm install @material-ui/core @material-ui/icons axios dayjs
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/RahulBhola/HoldingsAssignment/assets/104344946/7d564ca3-4dc6-4521-afbb-c7ddd0012fb6)
